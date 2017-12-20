@@ -29,7 +29,6 @@ import jogo.TipoDeDisparo;
 
 public class JogoFrame extends JFrame implements BotaoListener {
 	private JLabel contentPane;
-//	private JPanel contentPane;
 	
 	private GridPanel defesa;
 	private GridPanel ataque;
@@ -74,7 +73,6 @@ public class JogoFrame extends JFrame implements BotaoListener {
 		setIconImage(new ImageIcon("img/icone.png").getImage());
 		
 		contentPane = new JLabel(new ImageIcon("img/Jogo_bg.png"));
-//		contentPane = new JPanel();
 		setContentPane(contentPane);
 		GridBagLayout gbl_contentPane = new GridBagLayout();
 		gbl_contentPane.columnWidths = new int[] {10, 150, 440, 440, 10, 0};
@@ -133,6 +131,7 @@ public class JogoFrame extends JFrame implements BotaoListener {
 		contentPane.add(tipoDeDisparo, gbc_tipoDeDisparo);
 		
 		dicaButton = new JButton("Dica (3)");
+		dicaButton.setFocusPainted(false);
 		dicaButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		dicaButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -148,6 +147,7 @@ public class JogoFrame extends JFrame implements BotaoListener {
 		contentPane.add(dicaButton, gbc_dicaButton);
 		
 		sairButton = new JButton("Sair");
+		sairButton.setFocusPainted(false);
 		sairButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		sairButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {

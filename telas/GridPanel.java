@@ -56,6 +56,7 @@ public class GridPanel extends JPanel implements ActionListener {
 			
 			for (int j = 0; j < 10; j++) {
 				botoes[i][j] = new JButton(" ");
+				botoes[i][j].setFocusPainted(false);
 				botoes[i][j].addActionListener(this);
 				botoes[i][j].setPreferredSize(new Dimension(40, 40));
 				botoes[i][j].setBackground(corAgua);

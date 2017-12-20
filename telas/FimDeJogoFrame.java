@@ -51,6 +51,7 @@ public class FimDeJogoFrame extends JFrame {
 		contentPane.add(resultadoLabel, gbc_resultadoLabel);
 		
 		JButton reiniciarButton = new JButton("Reiniciar Jogo");
+		reiniciarButton.setFocusPainted(false);
 		reiniciarButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				batalhaNaval.reiniciar();
@@ -97,6 +98,7 @@ public class FimDeJogoFrame extends JFrame {
 		contentPane.add(reiniciarButton, gbc_reiniciarButton);
 		
 		JButton jogoAleatorioButton = new JButton("Jogo Aleatorio");
+		jogoAleatorioButton.setFocusPainted(false);
 		jogoAleatorioButton.setToolTipText("Jogar com um tabuleiro aleatorio");
 		jogoAleatorioButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -114,6 +116,7 @@ public class FimDeJogoFrame extends JFrame {
 		contentPane.add(jogoAleatorioButton, gbc_jogoAleatrioButton);
 		
 		JButton novoJogoButton = new JButton("Novo Jogo");
+		novoJogoButton.setFocusPainted(false);
 		novoJogoButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefinirJogoFrame definirJogoFrame = new DefinirJogoFrame();

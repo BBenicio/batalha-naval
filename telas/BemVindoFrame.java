@@ -48,6 +48,7 @@ public class BemVindoFrame extends JFrame {
 		contentPane.add(bemVindoLabel, gbc_bemVindoLabel);
 		
 		JButton aleatorioButton = new JButton("Jogo Aleatorio");
+		aleatorioButton.setFocusPainted(false);
 		aleatorioButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				JogoFrame jogoFrame = new JogoFrame();
@@ -65,6 +66,7 @@ public class BemVindoFrame extends JFrame {
 		contentPane.add(aleatorioButton, gbc_aleatorioButton);
 		
 		JButton definirButton = new JButton("Definir Jogo");
+		definirButton.setFocusPainted(false);
 		definirButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				DefinirJogoFrame definirJogoFrame = new DefinirJogoFrame();

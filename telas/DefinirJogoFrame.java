@@ -57,6 +57,7 @@ public class DefinirJogoFrame extends JFrame implements BotaoListener {
 		pecaComboBox.setModel(new DefaultComboBoxModel<Peca>(modelo));
 		
 		JButton limparTabuleiroButton = new JButton("Limpar Tabuleiro");
+		limparTabuleiroButton.setFocusPainted(false);
 		limparTabuleiroButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		limparTabuleiroButton.setToolTipText("Remover todas as pecas posicionadas");
 		limparTabuleiroButton.addActionListener(new ActionListener() {
@@ -74,6 +75,7 @@ public class DefinirJogoFrame extends JFrame implements BotaoListener {
 		contentPane.add(pecaComboBox);
 		
 		JButton carregarJogoButton = new JButton("Carregar Jogo");
+		carregarJogoButton.setFocusPainted(false);
 		carregarJogoButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		carregarJogoButton.setToolTipText("Carregar um tabuleiro de um arquivo");
 		carregarJogoButton.addActionListener(new ActionListener() {
@@ -89,6 +91,7 @@ public class DefinirJogoFrame extends JFrame implements BotaoListener {
 		contentPane.add(gridPane);
 		
 		jogarButton = new JButton("Jogar");
+		jogarButton.setFocusPainted(false);
 		jogarButton.setToolTipText("Iniciar a batalha");
 		jogarButton.setFont(new Font("Arial", Font.PLAIN, 12));
 		jogarButton.addActionListener(new ActionListener() {
